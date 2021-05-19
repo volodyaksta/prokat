@@ -1,15 +1,9 @@
 ﻿<div class="page_header">
   Аренда
 </div>
-<h1>Аренда</h1>
+<h1>Каталог автомобилей</h1>
 
-<p>Предоставление площади в любой точке мира по доступной цене. </p>
-
-<p>&nbsp;</p>
-
-<h2>Мебель</h2>
-
-<p>Предоставление всего  необходимого за отдельную плату.</p>
+<p>Предоставление аренды автомобилей по самым выгодным ценам. </p>
 
 
 <!DOCTYPE html>
@@ -120,21 +114,33 @@ img {vertical-align: middle;}
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="\img\1num\1.jpg" style="width:100%">
-  <div class="text">Мебель</div>
+  <div class="numbertext">1 | 6</div>
+  <img src="\img\cars\1.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="\img\1num\2.jpg" style="width:100%">
-  <div class="text">Мебель</div>
+  <div class="numbertext">2 | 6</div>
+  <img src="\img\cars\2.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="\img\1num\3.jpg" style="width:100%">
-  <div class="text">Мебель</div>
+  <div class="numbertext">3 | 6</div>
+  <img src="\img\cars\3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 | 6</div>
+  <img src="\img\cars\4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 | 6</div>
+  <img src="\img\cars\5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 | 6</div>
+  <img src="\img\cars\6.jpg" style="width:100%">
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -147,6 +153,9 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
 </div>
 
 <script>

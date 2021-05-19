@@ -1,5 +1,5 @@
 ﻿<div class="page_header">
-Заявка
+Оформление заявки
 </div>
 
 <?
@@ -9,14 +9,13 @@ $adress = $_SESSION['adress'];
 $phone = $_SESSION['phone'] ;
 $service = $_POST['service'];
 $kol = $_POST['kol'];
-$delivery = $_POST['delivery'];
 $summa = $_POST['summa'];
 
 
 $result = mysqli_query($link, "INSERT INTO `orders`(`fio`, `adress`, `phone`, `service`, `kol`,`delivery`, `summa`, `status`) VALUES ('$fio', '$adress', '$phone', '$service', '$kol','$delivery', '$summa', 'Создана')");
 
 if ($result) {
-$message_event = "Заявка на покупку успешно создана!";
+$message_event = "Заявка на аренду успешно создана!";
 }
 else {
 $message_event = "Не удалось создать заявку: ".$link->error;
@@ -31,7 +30,7 @@ $message_event = "Не удалось создать заявку: ".$link->erro
 <form class="form" action="" method="post" style="margin: 0 auto;">
 
 <div>
-<label>Город</label>
+<label>Выберите автомобиль</label>
 <select name="service" onchange="Summa()">';
 <?
 $sql = "SELECT * FROM `Service`";
@@ -45,18 +44,12 @@ echo '<option value="'.$row['sname'].'">'.$row['sname'].'</option>';
 }?></select>
 </div>
 <div>
-<label>Площадь</label>
+<label>Кол-во минут</label>
 <input type="text" name="kol" step="1" onchange="Summa()" required>
 </div>
+
 <div>
-<label>Мебель</label>
-<select name="delivery" onchange="Summa()">
-<option>Нет</option>
-<option>Да</option>
-</select>
-</div>
-<div>
-<label>Цена:</label>
+<label>Итоговая стоимость</label>
 <input type="text" name="summa" readonly>
 </div>
 

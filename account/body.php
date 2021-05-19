@@ -35,11 +35,9 @@ $message_event = "Не удалось удалить запись: ".$link->erro
 
 <tr>
 <th>ФИО</th>
-<th>Адрес</th>
 <th>Номер телефона</th>
-<th>Город</th>
-<th>Площадь</th>
-<th>Мебель</th>
+<th>Автомобиль</th>
+<th>Кол-во минут</th>
 <th>Цена</th>
 <th>Статус</th>
 <th>Удалить</th>
@@ -60,9 +58,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 </td>
 <td>
-<? echo $row['adress']; ?><br>
-</td>
-<td>
 <? echo $row['phone']; ?><br>
 </td>
 <td>
@@ -70,9 +65,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 </td>
 <td>
 <? echo $row['kol']; ?><br>
-</td>
-<td>
-<? echo $row['delivery']; ?><br>
 </td>
 <td>
 <? echo $row['summa']; ?><br>
@@ -118,10 +110,9 @@ while ($row = mysqli_fetch_assoc($result)) {
 <div style="overflow-x: auto">
 <table class="table" border="1" width="800px" align="center">
 <tr>
-<th>Город</th>
-<th>Номер</th>
-<th>Мебель</th>
-<th>Площадь</th>
+<th>Автомобиль</th>
+<th>Кол-во минут</th>
+<th>Цена</th>
 <th>Статус</th>
 </tr>
 <?
@@ -134,16 +125,9 @@ while ($row = mysqli_fetch_assoc($result2)) {
 
 <?echo $srv.$row['service']; ?><br>
 </td>
-<td>
-<? echo $row['kol']; ?><br>
-</td>
-<td><? echo $row['delivery']; ?></td>
+<td><? echo $row['kol']; ?><br></td>
 <td><? echo $row['summa']; ?></td>
-
-<td>
-<? echo $row['status']; ?>
-
-</td>
+<td><? echo $row['status']; ?></td>
 
 
 </tr>

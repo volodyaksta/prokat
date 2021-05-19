@@ -6,7 +6,7 @@
 <hr />
 <div style="background:#eeeeee; border:1px solid #cccccc; padding:5px 10px">Мы сдаем в аренду только качественные автомобили&nbsp;</div>
 
-<h2 style="font-style:italic"><img class="left" src="https://media-cdn.tripadvisor.com/media/photo-s/10/af/e6/b8/caption.jpg" /></h2>
+<img width="40%" src="/img/main.jpg">
 
 <div style="background:#eeeeee; border:1px solid #cccccc; padding:5px 10px">Самая маленькая цена среди компаний ориентированных на данную аудиторию</div>
 

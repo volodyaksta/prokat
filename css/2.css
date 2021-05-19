@@ -119,7 +119,7 @@ menu {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  background: #2351ce;
+  background: #a67100;
 }
 menu > ul {
   display: flex;
@@ -141,7 +141,7 @@ menu > ul > li > a:hover {
 
 /* Подвал */
 footer {
-  background: #034eee;
+  background: #a67100;
   padding: 10px;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -217,7 +217,7 @@ footer {
 }
 .news_header a {
   text-decoration: none;
-  color: #0055A6;
+  color: #a67100;
 }
 .news_header a:hover {
   cursor: pointer;

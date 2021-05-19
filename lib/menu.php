@@ -3,7 +3,7 @@
     <a href="/">Главная</a>
   </li>
   <li>
-    <a href="/uslugi/">Услуги</a>
+    <a href="/uslugi/">Каталог</a>
   </li>
   <li>
     <a href="/contacts/">Контакты</a>
